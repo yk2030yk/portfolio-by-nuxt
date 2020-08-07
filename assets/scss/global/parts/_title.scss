@@ -1,0 +1,12 @@
+h2 {
+  font-size: $font-size-middle-l;
+  font-weight: 700;
+}
+
+h2.topTitle {
+  margin-bottom: $space;
+  padding: 5px 0;
+  color: #d80000;
+  font-family: 'Caveat';
+  font-size: $font-size-large-l;
+}

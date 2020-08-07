@@ -1,0 +1,29 @@
+@mixin animation-sway($deg) {
+  @keyframes animation-sway {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate($deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-1 * $deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
